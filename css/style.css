@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+/*font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+header{
+    padding: 1.25rem;
+    position: absolute;
+}
+
+header > .logo{
+    position: absolute;
+    margin-top: 0.625rem;
+}
+
+body > header > div.menu-top{
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 0.7rem;
+    width: 63.188rem;
+}
+
+body > header > div.menu-top > div.menu-lefet{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+body > header > div.menu-top > div.menu-lefet > nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+body > header > div.menu-top > div.menu-lefet > nav > ul > li{
+    margin: 0rem 0.8rem;
+}
+
+body > header > div.menu-top > div.menu-lefet > nav > ul > li > a{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696C85;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
+body > header > div.menu-top > div.menu-lefet > nav > ul > li > a:hover{
+    color: #6650f1;
+    border-bottom: 0.1rem solid #5138EE;
+}
+
+body > header > div.menu-top > div.menu-right{
+    position: absolute;
+    width: 6.875rem;
+    margin-left: 38rem;
+    margin-top: -1.3rem;
+}
+
+body > header > div.menu-top > div.menu-right > div > a{
+    margin: 0rem 0.788rem;
+}
+
+body > header > div.menu-top > div.menu-right > div.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-right: 3rem;
+}
+
+body > header > div.menu-top > a{
+    background: #5138EE;
+    border: 0;
+    border-radius: 1.5rem;
+    padding: 0.688rem 1.313rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 45rem;
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+body > header > div.menu-top > a:hover{
+    background: #614bec;
+}
+
+body > header > div.menu-top > a > img{
+    margin-right: 0.875rem;
+}
+
+body > header > div.menu-top > a > span{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    margin-right: 0.5rem;
+}
+
+
+.banner{
+    background-color: #0A071B;
+    color: white;
+    width: 100vw;
+    height: 20.688rem;
+    position: absolute;
+    margin-top: 6.375rem;
+    display: flex;
+}
+
+
+.banner > .banner-left{
+    width: 24.063rem;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.banner > .banner-left > h1{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+.banner > .banner-left > h1 > strong{
+    color: #5138EE;
+}
+
+body > div > div.banner-left > p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+    margin-top: 0.653rem;
+}
+
+body > div > div.banner-left > button{
+    background-color: #5138EE;
+    color: white;
+    position: absolute;
+    margin-top: 0.688rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.438rem 2.188rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+}
+
+body > div > div.banner-right > .rocket{
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 8rem;
+}
+
+body > div > div.banner-right > div.back-vector{
+    margin-left: 7rem;
+}
+
+main{
+    position: absolute;
+    margin-top: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1.25rem;
+}
+
+body > main > section{
+    width: 24rem;
+    height: 25.5rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+body > main > section > h2{
+    position: absolute;
+}
+
+body > main > section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > main > aside{
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 1.5rem 1.813rem;
+    height: 25.5rem;
+}
+
+body > main > aside > h2{
+    margin-bottom: 0.938rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+body > main > aside > div.cards{
+    width: 50rem;
+    height: 18.813rem;
+    display: flex;
+    
+}
+
+body > main > aside > div.cards > div.card{
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    margin-right: 1.188rem;
+}
+
+body > main > aside > div.cards > div.card:last-child{
+    margin-right: 0rem;
+}
+
+body > main > aside > div > div > div > button{
+    background: #DCDAE6;
+    border-radius: 37px;
+    border: none;
+    color: #5138EE;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    padding: 0.563rem 0.875rem;
+    margin-top: 1.063rem;
+    margin-bottom: 0.563rem;
+    margin-left: 1.25rem;
+}
+
+body > main > aside > div > div > div > h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 23px;
+    color: #0A071B;
+    margin-bottom: 0.375rem;
+    margin-left: 1.5rem;
+}
+
+body > main > aside > div > div > div > span{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: #696C85;
+    margin-bottom: 0.938rem;
+    margin-left: 1.5rem;
+}
