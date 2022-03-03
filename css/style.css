@@ -194,23 +194,64 @@ body > main > section{
     width: 24rem;
     height: 25.5rem;
     margin-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 8px;
 }
 
-body > main > section > h2{
-    position: absolute;
+body > main > section > div.title-perfil > h2{
+    margin-top: 1.5rem;
+    margin-left: 2.25rem;
 }
 
-body > main > section > div{
+body > main > section > div.card-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body > main > section > div.card-perfil > div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body > main > section > div.card-perfil > span{
+    margin-top: 0.4rem;
+    margin-bottom: 1.938rem;
+}
+
+body > main > section > div.card-perfil > div.items{
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0.938rem 1.813rem;
+    height: 4.25rem;
+}
+
+body > main > section > div.card-perfil > div.items > div{
+    margin-right: 1.125rem;
+    text-align: center;
+}
+
+body > main > section > div.card-perfil > div.items > div > h3{
+    color: #0A071B;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.063rem;
+    line-height: 2.188rem;
+}
+
+body > main > section > div.card-perfil > div.items > div > h3:hover{
+    color: #5138EE;
+}
+
+body > main > section > div.card-perfil > div.items > div > span{
+    color: #828282;
+    margin-bottom: 1rem;
 }
 
 body > main > aside{
