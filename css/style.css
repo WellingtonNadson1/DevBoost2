@@ -169,6 +169,11 @@ body > div > div.banner-left > button{
     font-weight: normal;
     font-size: 0.938rem;
     line-height: 1.5rem;
+    cursor: pointer;
+}
+
+body > div > div.banner-left > button:hover{
+    background-color: #614bec;
 }
 
 body > div > div.banner-right > .rocket{
@@ -234,6 +239,10 @@ body > main > section > div.card-perfil > div.items{
 body > main > section > div.card-perfil > div.items > div{
     margin-right: 1.125rem;
     text-align: center;
+}
+
+body > main > section > div.card-perfil > div.items > div:hover{
+    border-top: 0.1rem solid #5138EE;
 }
 
 body > main > section > div.card-perfil > div.items > div > h3{
@@ -303,6 +312,7 @@ body > main > aside > div > div > div > button{
     margin-top: 1.063rem;
     margin-bottom: 0.563rem;
     margin-left: 1.25rem;
+    cursor: pointer;
 }
 
 body > main > aside > div > div > div > h3{
