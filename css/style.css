@@ -1,49 +1,66 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     width: 100vw;
-}
-/*font-family: 'Inter', sans-serif;
-font-family: 'Montserrat', sans-serif;*/
-
-header{
-    padding: 1.25rem;
-    position: absolute;
-}
-
-header > .logo{
-    position: absolute;
-    margin-top: 0.625rem;
-}
-
-body > header > div.menu-top{
-    position: absolute;
-    margin-left: 190px;
-    margin-top: 0.7rem;
-    width: 63.188rem;
-}
-
-body > header > div.menu-top > div.menu-lefet{
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    justify-content: start;
     align-items: flex-start;
 }
 
-body > header > div.menu-top > div.menu-lefet > nav > ul{
+/*font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+
+/*HEADER*/
+
+header {
+    padding: 1.25rem;
+    width: 100%;
+}
+
+/* header>div.logo {
+    margin-top: 0.625rem;
+} */
+
+/*MENU GERAL*/
+
+body>header>div.menu-top {
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*LEFET MENU*/
+body>header>div.menu-top>div.menu-lefet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+body>header>div.menu-top>div.menu-lefet {
+    margin-right: 1rem;
+}
+
+body>header>div.menu-top>div.menu-lefet>nav>ul {
     list-style: none;
     display: flex;
 }
 
-body > header > div.menu-top > div.menu-lefet > nav > ul > li{
+body>header>div.menu-top>div.menu-lefet>nav>ul>li {
     margin: 0rem 0.8rem;
 }
 
-body > header > div.menu-top > div.menu-lefet > nav > ul > li > a{
+body>header>div.menu-top>div.menu-lefet>nav>ul>li>a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -54,59 +71,105 @@ body > header > div.menu-top > div.menu-lefet > nav > ul > li > a{
     padding: 0.1rem;
 }
 
-body > header > div.menu-top > div.menu-lefet > nav > ul > li > a:hover{
+body>header>div.menu-top>div.menu-lefet>nav>ul>li>a:hover {
     color: #6650f1;
     border-bottom: 0.1rem solid #5138EE;
 }
 
-body > header > div.menu-top > div.menu-right{
-    position: absolute;
-    width: 6.875rem;
-    margin-left: 38rem;
-    margin-top: -1.3rem;
+/*RIGHT MENU*/
+
+body>header>div.menu-top>div.menu-right {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
 }
 
-body > header > div.menu-top > div.menu-right > div > a{
+/*RIGHT MENU - ICON SEARCH*/
+body>header>div.menu-top>div.menu-right>div.icon>input.search {
+    border: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    padding-left: 36px;
+    padding-right: 10px;
+    cursor: pointer;
+    background: url(../img/icon/Icon\ -\ Pesquisa.svg) no-repeat 10px/16px, white;
+
+    transition-property: width, border-radius, box-shadow;
+    transition-duration: 300ms;
+
+}
+
+body>header>div.menu-top>div.menu-right>div.icon>input.search:focus {
+    width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #6b57f1;
+    outline: none;
+    cursor: auto;
+    z-index: -1;
+}
+
+/*RIGHT MENU - ICON GROUP - HOUVER WORK*/
+body>header>div.menu-top>div.menu-right>div>a:nth-child(2)>img {
+    background-color: #72758C;
+    mask-image: url(../img/icon/Icon\ -\ Grupo.svg);
+    -webkit-mask: url(../img/icon/Icon\ -\ Grupo.svg);
+
+    transition: background-color 200ms;
+}
+
+body>header>div.menu-top>div.menu-right>div>a:nth-child(2)>img:hover {
+    background-color: #5138EE;
+}
+
+/*RIGHT MENU - ICON NOTIFICATION - HOUVER WORK*/
+body>header>div.menu-top>div.menu-right>div>a:nth-child(3)>img {
+    background-color: #72758C;
+    mask-image: url(../img/icon/Icon\ -\ Notificação.svg);
+    -webkit-mask: url(../img/icon/Icon\ -\ Notificação.svg);
+
+    transition: background-color 200ms;
+}
+
+body>header>div.menu-top>div.menu-right>div>a:nth-child(3)>img:hover {
+    background-color: #5138EE;
+}
+
+body>header>div.menu-top>div.menu-right>div>a {
     margin: 0rem 0.788rem;
 }
 
-body > header > div.menu-top > div.menu-right > div.icon{
+body>header>div.menu-top>div.menu-right>div.icon {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: row;
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
-body > header > div.menu-top > a{
+/*RIGHT MENU - BUTTON CREAT*/
+
+body>header>div>div.menu-right>a {
     background: #5138EE;
+    width: 126px;
     border: 0;
     border-radius: 1.5rem;
     padding: 0.688rem 1.313rem;
     color: white;
     text-decoration: none;
-    position: absolute;
-    margin-left: 45rem;
-    margin-top: -2rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-
 }
 
-body > header > div.menu-top > a:hover{
+body>header>div>div.menu-right>a:hover {
     background: #614bec;
 }
 
-body > header > div.menu-top > a > img{
-    margin-right: 0.875rem;
-}
-
-body > header > div.menu-top > a > span{
+body>header>div>div.menu-right>a>span {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -114,10 +177,12 @@ body > header > div.menu-top > a > span{
     line-height: 1.5rem;
     color: #FFFFFF;
     margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 
+/*MAIN BANNER*/
 
-.banner{
+.banner {
     background-color: #0A071B;
     color: white;
     width: 100vw;
@@ -125,16 +190,18 @@ body > header > div.menu-top > a > span{
     position: absolute;
     margin-top: 6.375rem;
     display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
 }
 
-
-.banner > .banner-left{
+.banner>.banner-left {
     width: 24.063rem;
     margin-left: 6rem;
     margin-top: 3rem;
 }
 
-.banner > .banner-left > h1{
+.banner>.banner-left>h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -143,11 +210,11 @@ body > header > div.menu-top > a > span{
     color: #fff;
 }
 
-.banner > .banner-left > h1 > strong{
+.banner>.banner-left>h1>strong {
     color: #5138EE;
 }
 
-body > div > div.banner-left > p{
+body>div>div.banner-left>p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -156,7 +223,7 @@ body > div > div.banner-left > p{
     margin-top: 0.653rem;
 }
 
-body > div > div.banner-left > button{
+body>div>div.banner-left>button {
     background-color: #5138EE;
     color: white;
     position: absolute;
@@ -172,21 +239,21 @@ body > div > div.banner-left > button{
     cursor: pointer;
 }
 
-body > div > div.banner-left > button:hover{
+body>div>div.banner-left>button:hover {
     background-color: #614bec;
 }
 
-body > div > div.banner-right > .rocket{
+body>div>div.banner-right>.rocket {
     position: absolute;
     margin-top: -2rem;
     margin-left: 8rem;
 }
 
-body > div > div.banner-right > div.back-vector{
+body>div>div.banner-right>div.back-vector {
     margin-left: 7rem;
 }
 
-main{
+main {
     position: absolute;
     margin-top: 30rem;
     display: flex;
@@ -195,7 +262,7 @@ main{
     padding: 1.25rem;
 }
 
-body > main > section{
+body>main>section {
     width: 24rem;
     height: 25.5rem;
     margin-right: 2rem;
@@ -204,31 +271,30 @@ body > main > section{
     border-radius: 8px;
 }
 
-body > main > section > div.title-perfil > h2{
+body>main>section>div.title-perfil>h2 {
     margin-top: 1.5rem;
     margin-left: 2.25rem;
 }
 
-body > main > section > div.card-perfil{
+body>main>section>div.card-perfil {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-body > main > section > div.card-perfil > div{
+body>main>section>div.card-perfil>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body > main > section > div.card-perfil > span{
+body>main>section>div.card-perfil>span {
     margin-top: 0.4rem;
     margin-bottom: 1.938rem;
 }
 
-body > main > section > div.card-perfil > div.items{
+body>main>section>div.card-perfil>div.items {
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
     border-radius: 5px;
@@ -236,16 +302,16 @@ body > main > section > div.card-perfil > div.items{
     height: 4.25rem;
 }
 
-body > main > section > div.card-perfil > div.items > div{
+body>main>section>div.card-perfil>div.items>div {
     margin-right: 1.125rem;
     text-align: center;
 }
 
-body > main > section > div.card-perfil > div.items > div:hover{
+body>main>section>div.card-perfil>div.items>div:hover {
     border-top: 0.1rem solid #5138EE;
 }
 
-body > main > section > div.card-perfil > div.items > div > h3{
+body>main>section>div.card-perfil>div.items>div>h3 {
     color: #0A071B;
     font-family: Montserrat;
     font-style: normal;
@@ -254,16 +320,16 @@ body > main > section > div.card-perfil > div.items > div > h3{
     line-height: 2.188rem;
 }
 
-body > main > section > div.card-perfil > div.items > div > h3:hover{
+body>main>section>div.card-perfil>div.items>div>h3:hover {
     color: #5138EE;
 }
 
-body > main > section > div.card-perfil > div.items > div > span{
+body>main>section>div.card-perfil>div.items>div>span {
     color: #828282;
     margin-bottom: 1rem;
 }
 
-body > main > aside{
+body>main>aside {
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 8px;
@@ -271,7 +337,7 @@ body > main > aside{
     height: 25.5rem;
 }
 
-body > main > aside > h2{
+body>main>aside>h2 {
     margin-bottom: 0.938rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -280,24 +346,24 @@ body > main > aside > h2{
     line-height: 40px;
 }
 
-body > main > aside > div.cards{
+body>main>aside>div.cards {
     width: 50rem;
     height: 18.813rem;
     display: flex;
-    
+
 }
 
-body > main > aside > div.cards > div.card{
+body>main>aside>div.cards>div.card {
     border: 1px solid #EBEBEB;
     border-radius: 8px;
     margin-right: 1.188rem;
 }
 
-body > main > aside > div.cards > div.card:last-child{
+body>main>aside>div.cards>div.card:last-child {
     margin-right: 0rem;
 }
 
-body > main > aside > div > div > div > button{
+body>main>aside>div>div>div>button {
     background: #DCDAE6;
     border-radius: 37px;
     border: none;
@@ -315,7 +381,7 @@ body > main > aside > div > div > div > button{
     cursor: pointer;
 }
 
-body > main > aside > div > div > div > h3{
+body>main>aside>div>div>div>h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -326,7 +392,7 @@ body > main > aside > div > div > div > h3{
     margin-left: 1.5rem;
 }
 
-body > main > aside > div > div > div > span{
+body>main>aside>div>div>div>span {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
